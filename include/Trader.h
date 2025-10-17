@@ -13,8 +13,8 @@ class Trader {
         std::vector<Order*> orders;
 
     public:
-        Trader(int id, double balance) : id(id), balance(balance) {}
-        virtual ~Trader() = default;
+        Trader(int id, double balance);
+        virtual ~Trader();
 
     public:
         int getID() const;
@@ -22,11 +22,11 @@ class Trader {
         double getBalance() const;
         const std::vector<Stock*>& getStocks() const;
         const std::vector<Order*>& getOrders() const;
-        void setId(int);
-        void setType(char);
+        // void setId(int);
+        // void setType(char);
         void setBalance(double*);
-        void makeOrder(Order*);
-        void addStock(Stock*);
-        Stock* findStock(int) const;
-        virtual std::string createOrder(Stock*);
+        // void makeOrder(Order*);
+        // void addStock(Stock*);
+        // Stock* findStock(int) const;
+        // virtual std::string createOrder(Stock*);
 };

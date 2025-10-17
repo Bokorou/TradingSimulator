@@ -1,5 +1,13 @@
 #include "Trader.h"
 
+Trader::Trader(int id, double balance) : id(id), balance(balance){
+    std::cout << "Creating Trader with ID: " << id << " and balance: " << balance<< std::endl;
+}
+
+Trader::~Trader(){
+
+}
+
 int Trader::getID() const{
     return id;
 }
